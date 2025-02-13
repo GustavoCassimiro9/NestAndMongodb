@@ -11,7 +11,7 @@ import { User } from './user/entities/user.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mongodb',
-      url: process.env.MONGO_URI, // Pega do environment do Docker
+      url: process.env.MONGO_URI,
       database: process.env.MONGO_DB,
       entities: [User],
       synchronize: true,

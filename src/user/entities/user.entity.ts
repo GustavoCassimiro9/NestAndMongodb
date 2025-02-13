@@ -6,7 +6,7 @@ import { IsString, IsEmail, IsNotEmpty, IsMongoId } from 'class-validator';
 export class User {
   @ObjectIdColumn()
   @IsMongoId()  
-  id: ObjectId;
+  id: string;
 
   @Column()
   @IsNotEmpty()
