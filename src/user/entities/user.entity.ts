@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Entity, ObjectIdColumn, ObjectId, Column } from 'typeorm';
+import { Entity, ObjectIdColumn, Column } from 'typeorm';
 import { IsString, IsEmail, IsNotEmpty, IsMongoId } from 'class-validator';
 
 @Entity()
