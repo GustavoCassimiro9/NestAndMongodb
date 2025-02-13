@@ -27,8 +27,8 @@ services:
     environment:
       MONGO_URI: mongodb://admin:admin123@mongodb:27017/meu_banco?authSource=admin
     volumes:
-      - .:/app
-      - /app/node_modules
+      - ./src:/app/src  # Mapear o diretório src local para o diretório src no container
+      - /app/node_modules  # Volumes para node_modules (não mapear o node_modules local para evitar conflitos)
 
 volumes:
   mongodb_data:
